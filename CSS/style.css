@@ -247,8 +247,6 @@ body {
     text-align: center;
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
-    width: 100%;
 }
 
 .opr {
@@ -323,7 +321,6 @@ article p {
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
-    overflow-x: hidden;
 }
 
 .block {
@@ -409,6 +406,11 @@ article p {
 }
 
 @media (max-width: 768px) {
+    html, body {
+        overflow-x: hidden;
+        width: 100%;
+    }
+
     .container {
         max-width: 100%;
         padding-left: 10px;
